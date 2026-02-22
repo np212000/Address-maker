@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Task 2
+</title>
+
+<meta lang = "eng-US">
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "style.css">
+
+<script>
+
+function make()
+{var a = document.getElementById("input_name").value; 
+var b = document.getElementById("input_mo").value;
+var c = document.getElementById("input_almono").value;
+var d = document.getElementById("input_fa").value;
+var e = document.getElementById("input_mail").value;
+var f = document.getElementById("add_add").value;
+
+
+var g = document.getElementById("name");
+g.innerHTML = a;
+
+var h = document.getElementById("number");
+h.innerHTML = b;
+
+var i = document.getElementById("exnumber");
+i.innerHTML = c;
+
+var j = document.getElementById("faname");
+j.innerHTML = d;
+
+var k = document.getElementById("emailid");
+k.innerHTML = e;
+
+var l = document.getElementById("address");
+l.innerHTML  = f;
+return false;}
+
+
+function bold()
+{var a = document.getElementById("faname");
+a.style.fontWeight = "bold";
+
+var b = document.getElementById("emailid");
+b.style.fontWeight = "bold";
+
+var c = document.getElementById("address");
+c.style.fontWeight = "bold";}
+
+
+
+function italic()
+{var a = document.getElementById("faname");
+a.style.fontStyle = "italic";
+
+var b = document.getElementById("emailid");
+b.style.fontStyle = "italic";
+
+var c = document.getElementById("address");
+c.style.fontStyle = "italic";}
+
+
+
+function undo()
+{var a = document.getElementById("faname");
+a.style.fontWeight = "normal";
+
+var b = document.getElementById("emailid");
+b.style.fontWeight = "normal";
+
+var c = document.getElementById("address");
+c.style.fontWeight = "normal";
+
+var d = document.getElementById("faname");
+d.style.fontStyle = "normal";
+
+var e = document.getElementById("emailid");
+e.style.fontStyle = "normal";
+
+var f = document.getElementById("address");
+f.style.fontStyle = "normal";}
+
+</script>
+
+</head>
+<body>
+
+
+<h1>Address Maker</h1>
+<h6>An online Address Creator Tool</h6>
+<br>
+<hr>
+
+
+
+
+<h2>Type Your Information Here</h2>
+
+<form id = "add_table">
+
+Name:-<br>
+<input type = "text" name = "name" placeholder = "enter your name here" id = "input_name" class = "add"
+autocomplete = "autocomplete"/>
+<br><br>
+
+Mobaile No:-<br>
+<input type = "number" name = "mobaile no" placeholder = "enter your mobaile no here" id = "input_mo"
+class = "add"/>
+<br><br>
+
+Alternative Mobaile NO:-<br>
+<input type = "number" name = "Alternative mobaile no" class = "add"
+placeholder = "enter your Alternative number here" id = "input_almono"/>
+<br><br>
+
+Father Name:-<br>
+<input type = "text" name = "father name" placeholder = "enter your father name here" id = "input_fa"
+class = "add"/>
+<br><br>
+
+Email:-<br>
+<input type = "email" name = "emaile" placeholder = "enter your valid Email address" id = "input_mail"
+class = "add"/>
+<br><br>
+
+Address:-<br>
+<textarea name = "address" id = "add_add" placeholder = "type your address here" autocomplete = "autocomplete"
+class = "add"></textarea>
+<br><br>
+
+<button id = "make_btn" onclick = "return make()">Make</button>
+
+</form>
+
+<div id = "window">
+
+<p id = "name"></P>
+<p id = "number"></P>
+<p id = "exnumber"></P>
+<p id = "faname"></P>
+<p id = "emailid"></P>
+<p id = "address"></P>
+
+</div>
+
+<nav>
+
+<button id = "print_btn" class = "btn" onclick = "window.print()">Print</button>
+<button id = "bold_btn" class = "btn" onclick = "bold()">Bold</button>
+<button id = "italic_btn" class = "btn" onclick = "italic()">Italic</button>
+<button id = "undo_btn" class = "btn" onclick = "undo()">Undo</button>
+
+</nav>
+
+
+
+
+</body>
+</html>

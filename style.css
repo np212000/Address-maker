@@ -1,0 +1,52 @@
+@charset UTF-8;
+
+*{padding : 0px; margin : 0px; box-sizing : border-box;}
+
+body {background-image : url(bg2.jpg);}
+
+
+h1 {color : white; text-align : center; margin-top : 5px;}
+
+h6 {color : white; text-align : center; margin-top : 5px;}
+
+h2 {color : white; margin-top : 70px; margin-left : 60px;}
+
+#add_table {color : white; margin-left : 50px; margin-top : 30px;
+font-size : 16px; font-family : sans-serif;}
+
+.add {background : inherit; border : 1px solid white; width : 300px; height : 25px; margin-top : 5px;
+padding : 10px; color : white; font-size : 15px;}
+
+#add_add {width : 300px; height : 70px; background : inherit; border : 1px solid white;
+color : white; font-size : 15px; padding : 5px;}
+
+#make_btn {margin-left : 230px; background : inherit; border : 1px solid white; 
+width : 70px; height : 30px; color : white;}
+
+#window {width : 400px; height : 220px; border : 2px groove white;  margin-top : -500px;
+margin-left : 700px; background-image : url(bg1.jpg); background-size : 400px 220px; color : white;
+font-size : 20px; padding : 10px; font-family : sans-serif; overflow : hidden;}
+
+nav {width : 400px; height : 50px; background-color : black; border : 1px solid white; margin-left : 700px;
+display : flex; justify-content : space-around; align-items : center;}
+
+.btn {width : 90px; height : 28px; font-size : 16px;}
+
+#bold_btn {font-weight : bold;}
+
+#italic_btn {font-style : italic;}
+
+#name {color : yellow; margin-top : 50px; font-size : 20px; font-family : Sitka Small;}
+
+#faname {color : white; font-size : 15px; margin-top : 80px;}
+
+#emailid {color : white; font-size : 15px; }
+
+#address {color : white; font-size : 15px;}
+
+#number {color : yellow; margin-top : -50px; margin-left : 260px;}
+
+#exnumber {color : yellow; margin-top : -50px; margin-left : 260px;}
+
+
+
